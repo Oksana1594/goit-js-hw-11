@@ -1,1 +1,96 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.search-form {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+input.search-input:focus-visible {
+  outline-color: rgb(56, 205, 56);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.search-input {
+  outline-color: rgb(56, 205, 56);
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  height: 52px;
+
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(56, 205, 56);
+  border-color: transparent;
+}
+
+.submit-btn:focus {
+  box-shadow: 0 0 5px 5px rgb(56, 205, 56);
+}
+
+.load-more {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #fff;
+
+  background-color: rgb(56, 205, 56);
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.load-more:focus {
+  box-shadow: 0 0 5px 5px rgb(56, 205, 56);
+}
+
+.load-more[disabled] {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  max-width: 1140px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 250ms linear;
+}
+
+.preview-image:hover {
+  transform: scale(1.1);
+}
+
+.photo-card {
+  flex-basis: calc((100% - 40px) / 3);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.info {
+  text-align: center;
+  flex-grow: 2px;
+  justify-content: center;
+  display: flex;
+}
